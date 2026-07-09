@@ -27,13 +27,12 @@ main {
 
 h1 {
     text-align: center;
+    margin: 15px 0;
 }
 
 picture {
     display: block;
-    margin-bottom: 30px;
-    
-    
+    margin-bottom: 30px 
 }
 
 img {
