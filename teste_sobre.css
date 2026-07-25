@@ -1,0 +1,267 @@
+/* ===== Reset básico ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: #1c2b33;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* ===== Utilitários ===== */
+.grid {
+    display: grid;
+    grid-template-columns: minmax(70px, 120px) 1fr;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    list-style: none;
+}
+
+/* ===== Cabeçalho ===== */
+header.grid {
+    padding: 1rem 1.5rem;
+    background-color: #180377;
+}
+
+header.grid img {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    justify-self: start;
+}
+
+header.grid nav {
+    justify-self: end;
+}
+
+nav .flex {
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav .flex li {
+    flex: 0 1 auto;
+}
+
+nav .flex li a {
+    display: block;
+    background-color: #ffffff;
+    color: #1c2b33;
+    border: 1px solid #8a8a8a;
+    border-radius: 4px;
+    padding: 0.6rem clamp(0.6rem, 2vw, 1.1rem);
+    font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+nav .flex li a:hover,
+nav .flex li a:focus {
+    background-color: #ffb703;
+    border-color: #ffb703;
+}
+
+/* ===== Hero ===== */
+.hero {
+    position: relative;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero h1 {
+    color: #1c2b33;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: clamp(1.2rem, 4vw, 1.9rem);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.hero-content p {
+    flex: 3 1 320px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 1.25rem;
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: pre-line;
+}
+
+.hero-thumb {
+    flex: 1 1 150px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 4px;
+    align-self: center;
+}
+
+/* ===== Seção História ===== */
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem 2rem;
+    padding: 2.5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia h2 {
+    flex: 1 1 100%;
+    text-align: center;
+    color: #1c2b33;
+    margin-bottom: 0.5rem;
+}
+
+.historia-esquerda,
+.historia-direita {
+    flex: 1 1 240px;
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: pre-line;
+}
+
+.historia img {
+    flex: 2 1 300px;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #1c2b33;
+}
+
+/* ===== Seção "A aventura está te esperando" ===== */
+.aventura {
+    padding: 2rem 1.5rem 2.5rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.aventura h2 {
+    color: #1c2b33;
+    margin-bottom: 1.5rem;
+}
+
+.aventura-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aventura-galeria figure {
+    margin: 0;
+}
+
+.aventura-galeria img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.aventura-galeria figcaption {
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1c2b33;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background-color: #b7b7b7;
+    color: #1c2b33;
+    font-size: 0.95rem;
+}
+
+footer p {
+    flex: 1 1 220px;
+    margin: 0;
+}
+
+.rede-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 0 1 auto;
+}
+
+.rede-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #1c2b33;
+    border-radius: 4px;
+}
+
+.rede-sociais img {
+    width: 22px;
+    height: 22px;
+}
+
