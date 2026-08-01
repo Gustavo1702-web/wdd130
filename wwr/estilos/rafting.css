@@ -1,0 +1,212 @@
+/* contato.css — estende sobre.css apenas para o conteúdo específico da página Fale Conosco */
+
+:root {
+    --rio-azul: #114b5f;
+    --rapido-teal: #1a936f;
+    --espuma: #f8fdff;
+    --energia: #f3a712;
+    --texto: #273043;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--texto);
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+nav ul li a.ativo {
+    border-bottom: 3px solid var(--energia);
+}
+
+.contato-topo {
+    text-align: center;
+    padding: 2.5rem 1.5rem 2rem;
+}
+
+.contato-topo h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--rio-azul);
+    margin-bottom: 0.75rem;
+}
+
+.contato-topo .empresa-dados {
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 68rem;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+    align-items: stretch;
+}
+
+.contato-mapa {
+    min-height: 22rem;
+}
+
+.contato-mapa iframe {
+    border: 0;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 22rem;
+}
+
+.contato-formulario {
+    background: var(--espuma);
+    border: 1px solid #dfeaee;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.contato-formulario label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}
+
+.contato-formulario input,
+.contato-formulario select,
+.contato-formulario textarea {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #c7d6db;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contato-formulario input:focus,
+.contato-formulario select:focus,
+.contato-formulario textarea:focus {
+    outline: 2px solid var(--energia);
+    outline-offset: 1px;
+}
+
+.contato-formulario fieldset.finalidade {
+    border: 1px solid #c7d6db;
+    border-radius: 6px;
+    padding: 0.75rem 1rem 1rem;
+    margin-top: 0.75rem;
+}
+
+.contato-formulario fieldset.finalidade legend {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0 0.4rem;
+    color: var(--rio-azul);
+}
+
+.contato-formulario .opcao-radio,
+.contato-formulario .opcao-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.contato-formulario .opcao-checkbox {
+    margin-top: 1rem;
+}
+
+.contato-formulario input[type="radio"],
+.contato-formulario input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--rapido-teal);
+    cursor: pointer;
+}
+
+.contato-formulario button {
+    margin-top: 1.25rem;
+    width: 100%;
+    background: var(--rio-azul);
+    color: var(--espuma);
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contato-formulario button:hover {
+    background: var(--rapido-teal);
+}
+
+/* Seção da equipe */
+.equipe {
+    background: #ececec;
+    padding: 2.5rem 1.5rem;
+}
+
+.equipe h2 {
+    text-align: center;
+    color: var(--rio-azul);
+    margin: 0 auto 1.75rem;
+}
+
+.equipe-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1.75rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.equipe-galeria figure {
+    margin: 0;
+    text-align: center;
+}
+
+.equipe-galeria img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--energia);
+}
+
+.equipe-galeria figcaption {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.equipe-galeria figcaption strong {
+    color: var(--rio-azul);
+    font-size: 1rem;
+}
+
+.equipe-galeria figcaption span {
+    font-size: 0.85rem;
+    color: #5b6b73;
+}
+
+@media (max-width: 46rem) {
+    .contato-conteudo {
+        grid-template-columns: 1fr;
+    }
+}
