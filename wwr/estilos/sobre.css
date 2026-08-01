@@ -189,6 +189,9 @@ nav .flex li a:focus {
 .aventura h2 {
     color: #1c2b33;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aventura-galeria {
