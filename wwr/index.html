@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Viva a emoção do rafting com segurança absoluta! Desça as melhores corredeiras, sinta a adrenalina e conecte-se com a natureza. Reserve sua aventura!">
+    <meta name="author" content="Edison Gustavo Rodrigues da Silva">
+    <title>Página Inicial | Viva Correnteza Rafting</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header class="grid">
+        <img src="https://byui-cse.github.io/wdd130-ww-course-pt/resources/images/logos/z-crossedoars.png"
+            alt="Logotipo Viva Correnteza Rafting">
+
+        <nav>
+            <ul class="flex">
+                <li><a class="ativo" aria-current="page" href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO: imagem principal full-width + mensagem em position: absolute -->
+        <section class="home-hero">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting10_1024.jpg"
+                alt="Bote descendo uma corredeira do Rio Sidom">
+            <div class="home-hero-message">
+                <span class="eyebrow">Rio Sidom · Classe II a V</span>
+                <h1>Encare a correnteza. Sinta a vida.</h1>
+                <p>Descidas guiadas por instrutores certificados, com segurança máxima e a adrenalina que só o rio
+                    entrega.</p>
+                <a href="passeios.html" class="btn btn-primary">Ver passeios disponíveis</a>
+            </div>
+        </section>
+
+        <!-- INTRODUÇÃO -->
+        <section class="intro">
+            <div class="intro-content">
+                <h2>Rafting de verdade, guiado com segurança</h2>
+                <p>A Viva Correnteza Rafting leva grupos, famílias e aventureiros solo para dentro do Rio Sidom.
+                    Cada saída é conduzida por guias certificados, com equipamento revisado e um roteiro pensado
+                    para o nível de cada equipe — da correnteza tranquila às quedas de Classe V.</p>
+            </div>
+        </section>
+
+        <!-- GRID CSS: layout não-linear, com imagens e conteúdo sobre a finalidade do site -->
+        <section class="destaques">
+            <div class="destaques-grid">
+
+                <div class="destaque-card tile-foto-a">
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting27_1024.jpg"
+                        alt="Bote descendo a corredeira do Rio Jacaré entre rochas">
+                </div>
+
+                <div class="destaque-card tile-texto-a destaque-body">
+                    <span class="classe-badge">Classe II–III</span>
+                    <h3>Descida Rio Jacaré</h3>
+                    <p>Ideal para famílias e iniciantes. Corredeiras moderadas, paisagem exuberante e paradas para
+                        nadar em águas calmas.</p>
+                </div>
+
+                <div class="destaque-card tile-stat destaque-body">
+                    <span class="stat-num">5.400+</span>
+                    <span class="stat-label">Remadores levados ao rio desde 2011</span>
+                </div>
+
+                <div class="destaque-card tile-texto-b destaque-body">
+                    <span class="classe-badge classe-v">Classe V</span>
+                    <h3>Canyon do Sidom</h3>
+                    <p>Para equipes experientes. A descida mais técnica da nossa operação, com leitura de água em
+                        tempo real.</p>
+                </div>
+
+                <div class="destaque-card tile-foto-b">
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting64_1024.jpg"
+                        alt="Grupo de remadores comemorando após descer a corredeira da Cachoeira Grande">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <section class="cta-faixa">
+            <div class="cta-inner">
+                <div>
+                    <h2>Escolha sua corredeira</h2>
+                    <p>Compare roteiros, duração e nível de dificuldade e reserve o passeio certo para o seu grupo.</p>
+                </div>
+                <a href="passeios.html" class="btn btn-outline">Explorar todos os passeios</a>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <div class="newsletter-inner">
+                <div>
+                    <span class="eyebrow"
+                        style="color:#ffb703; text-transform:uppercase; font-size:0.8rem; font-weight:700; letter-spacing:0.06em;">Fique
+                        por dentro</span>
+                    <h2>Receba avisos de vazão do rio e vagas</h2>
+                    <p>Enviamos um aviso quando o nível do rio está ideal para cada classe de corredeira, além de
+                        vagas de última hora com desconto.</p>
+                </div>
+
+                <form class="newsletter-form" action="#" method="post">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Quero receber os avisos</button>
+                    <p class="form-note">Sem spam. Cancele a inscrição quando quiser.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viva Correnteza Rafting | Gustavo Rodrigues</p>
+        <nav class="rede-sociais">
+            <a href="https://facebook.com">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/facebook.svg"
+                    alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/linkedin.svg"
+                    alt="Ícone do Linkedin">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/instagram.svg"
+                    alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
