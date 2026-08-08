@@ -27,58 +27,59 @@
     </header>
 
     <main>
-        <!-- HERO: imagem principal full-width + mensagem em position: absolute -->
-        <section class="home-hero">
+
+        <section class="capa" aria-labelledby="titulo-capa">
             <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting10_1024.jpg"
                 alt="Bote descendo uma corredeira do Rio Sidom">
-            <div class="home-hero-message">
-                <span class="eyebrow">Rio Sidom · Classe II a V</span>
-                <h1>Encare a correnteza. Sinta a vida.</h1>
+            <div class="capa-mensagem">
+                <span class="chapeu">Rio Sidom · Classe II a V</span>
+                <h1 id="titulo-capa">Encare a correnteza. Sinta a vida.</h1>
                 <p>Descidas guiadas por instrutores certificados, com segurança máxima e a adrenalina que só o rio
                     entrega.</p>
-                <a href="passeios.html" class="btn btn-primary">Ver passeios disponíveis</a>
+                <a href="passeios.html" class="botao botao-primario">Ver passeios disponíveis</a>
             </div>
         </section>
 
         <!-- INTRODUÇÃO -->
-        <section class="intro">
-            <div class="intro-content">
-                <h2>Rafting de verdade, guiado com segurança</h2>
+        <section class="introducao" aria-labelledby="titulo-introducao">
+            <div class="introducao-conteudo">
+                <h2 id="titulo-introducao">Rafting de verdade, guiado com segurança</h2>
                 <p>A Viva Correnteza Rafting leva grupos, famílias e aventureiros solo para dentro do Rio Sidom.
                     Cada saída é conduzida por guias certificados, com equipamento revisado e um roteiro pensado
                     para o nível de cada equipe — da correnteza tranquila às quedas de Classe V.</p>
             </div>
         </section>
 
-        <!-- GRID CSS: layout não-linear, com imagens e conteúdo sobre a finalidade do site -->
-        <section class="destaques">
+
+        <section class="destaques" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques" class="sr-only">Destaques dos nossos passeios</h2>
             <div class="destaques-grid">
 
-                <div class="destaque-card tile-foto-a">
+                <div class="cartao-destaque bloco-foto-a">
                     <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting27_1024.jpg"
                         alt="Bote descendo a corredeira do Rio Jacaré entre rochas">
                 </div>
 
-                <div class="destaque-card tile-texto-a destaque-body">
-                    <span class="classe-badge">Classe II–III</span>
-                    <h3>Descida Rio Jacaré</h3>
+                <div class="cartao-destaque bloco-texto-a cartao-corpo">
+                    <span class="selo-classe">Classe II–III</span>
+                    <h3>Descida Rio Igaratá</h3>
                     <p>Ideal para famílias e iniciantes. Corredeiras moderadas, paisagem exuberante e paradas para
                         nadar em águas calmas.</p>
                 </div>
 
-                <div class="destaque-card tile-stat destaque-body">
-                    <span class="stat-num">5.400+</span>
-                    <span class="stat-label">Remadores levados ao rio desde 2011</span>
+                <div class="cartao-destaque bloco-numero cartao-corpo">
+                    <span class="numero-destaque">5.400+</span>
+                    <span class="numero-legenda">Remadores levados ao rio desde 2011</span>
                 </div>
 
-                <div class="destaque-card tile-texto-b destaque-body">
-                    <span class="classe-badge classe-v">Classe V</span>
+                <div class="cartao-destaque bloco-texto-b cartao-corpo">
+                    <span class="selo-classe classe-v">Classe V</span>
                     <h3>Canyon do Sidom</h3>
                     <p>Para equipes experientes. A descida mais técnica da nossa operação, com leitura de água em
                         tempo real.</p>
                 </div>
 
-                <div class="destaque-card tile-foto-b">
+                <div class="cartao-destaque bloco-foto-b">
                     <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting64_1024.jpg"
                         alt="Grupo de remadores comemorando após descer a corredeira da Cachoeira Grande">
                 </div>
@@ -86,30 +87,30 @@
             </div>
         </section>
 
-        <!-- CHAMADA PARA AÇÃO -->
-        <section class="cta-faixa">
-            <div class="cta-inner">
+
+        <section class="faixa-acao" aria-labelledby="titulo-faixa-acao">
+            <div class="faixa-acao-conteudo">
                 <div>
-                    <h2>Escolha sua corredeira</h2>
+                    <h2 id="titulo-faixa-acao">Escolha sua corredeira</h2>
                     <p>Compare roteiros, duração e nível de dificuldade e reserve o passeio certo para o seu grupo.</p>
                 </div>
-                <a href="passeios.html" class="btn btn-outline">Explorar todos os passeios</a>
+                <a href="passeios.html" class="botao botao-contorno">Explorar todos os passeios</a>
             </div>
         </section>
 
         <!-- NEWSLETTER -->
-        <section class="newsletter">
-            <div class="newsletter-inner">
+        <section class="newsletter" aria-labelledby="titulo-newsletter">
+            <div class="newsletter-conteudo">
                 <div>
-                    <span class="eyebrow"
+                    <span class="chapeu"
                         style="color:#ffb703; text-transform:uppercase; font-size:0.8rem; font-weight:700; letter-spacing:0.06em;">Fique
                         por dentro</span>
-                    <h2>Receba avisos de vazão do rio e vagas</h2>
+                    <h2 id="titulo-newsletter">Receba avisos de vazão do rio e vagas</h2>
                     <p>Enviamos um aviso quando o nível do rio está ideal para cada classe de corredeira, além de
                         vagas de última hora com desconto.</p>
                 </div>
 
-                <form class="newsletter-form" action="#" method="post">
+                <form class="formulario-newsletter" action="#" method="post">
                     <div class="campo">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
@@ -118,8 +119,8 @@
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="voce@email.com" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Quero receber os avisos</button>
-                    <p class="form-note">Sem spam. Cancele a inscrição quando quiser.</p>
+                    <button type="submit" class="botao botao-primario">Quero receber os avisos</button>
+                    <p class="nota-formulario">Sem spam. Cancele a inscrição quando quiser.</p>
                 </form>
             </div>
         </section>
