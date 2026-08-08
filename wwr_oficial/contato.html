@@ -8,16 +8,10 @@
         content="Entre em contato com a Viva Correnteza Rafting: endereço, telefone, e-mail e formulário para tirar dúvidas sobre nossos passeios de rafting.">
     <meta name="author" content="Edison Gustavo Rodrigues da Silva">
     <title>Fale Conosco | Viva Correnteza Rafting</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="estilos/sobre.css">
-    <link rel="stylesheet" href="estilos/contato.css">
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
-<body>
+<body class="pagina-contato">
     <header class="grid">
         <img src="https://byui-cse.github.io/wdd130-ww-course-pt/resources/images/logos/z-crossedoars.png"
             alt="Logotipo Viva Correnteza Rafting">
@@ -27,7 +21,7 @@
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="passeios.html">Passeios</a></li>
-                <li><a class="ativo" href="contato.html">Fale Conosco</a></li>
+                <li><a class="ativo" aria-current="page" href="contato.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -37,8 +31,8 @@
             <h1>Viva Correnteza Rafting</h1>
             <p class="empresa-dados">
                 Estrada do Rio Sidom, km 12, Distrito de Correntezas<br>
-                Sidom, São Paulo<br>
-                +55 11 9999-8888<br>
+                Sidom, São josé dos Campos - SP<br>
+                +55 12 9999-8888<br>
                 contato@vivacorrenteza.com.br
             </p>
         </section>
@@ -46,14 +40,14 @@
         <section class="contato-conteudo">
             <div class="contato-mapa">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.978939798!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKzMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1690000000000"
-                    width="100%" height="100%" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Mapa de localização da Viva Correnteza Rafting"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41485.12635706338!2d-45.91227791446303!3d-23.2138937143883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1785617411521!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
             </div>
 
             <div class="contato-formulario">
-                <form action="#" method="post">
+                <form action="">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
 
@@ -63,17 +57,17 @@
                     <fieldset class="finalidade">
                         <legend>Propósito da Mensagem</legend>
 
-                        <label class="opcao-radio" for="finalidade-geral">
+                        <label class="opcao-radio">
                             <input type="radio" id="finalidade-geral" name="finalidade" value="consulta-geral" checked>
                             Consulta Geral
                         </label>
 
-                        <label class="opcao-radio" for="finalidade-reserva">
+                        <label class="opcao-radio">
                             <input type="radio" id="finalidade-reserva" name="finalidade" value="pergunta-reserva">
                             Pergunta sobre Reserva
                         </label>
 
-                        <label class="opcao-radio" for="finalidade-sugestao">
+                        <label class="opcao-radio">
                             <input type="radio" id="finalidade-sugestao" name="finalidade" value="sugestao-site">
                             Sugestão de Site
                         </label>
@@ -89,6 +83,7 @@
 
                     <button type="submit">Entrar em Contato!</button>
                 </form>
+
             </div>
         </section>
 
@@ -96,28 +91,28 @@
             <h2>Estamos Aqui para Serví-lo</h2>
             <div class="equipe-galeria">
                 <figure>
-                    <img src="https://i.pravatar.cc/300?img=12" alt="Foto de Rafael Souza">
+                    <img src="https://i.pravatar.cc/300?u=rafael-souza" alt="Foto de Rafael Souza">
                     <figcaption>
                         <strong>Rafael Souza</strong>
                         <span>Guia-Chefe de Rafting</span>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://i.pravatar.cc/300?img=47" alt="Foto de Camila Torres">
+                    <img src="https://i.pravatar.cc/300?u=camila-torres" alt="Foto de Camila Torres">
                     <figcaption>
                         <strong>Camila Torres</strong>
                         <span>Instrutora de Segurança</span>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://i.pravatar.cc/300?img=33" alt="Foto de Bruno Alves">
+                    <img src="https://i.pravatar.cc/300?u=bruno-alves" alt="Foto de Bruno Alves">
                     <figcaption>
                         <strong>Bruno Alves</strong>
                         <span>Coordenador de Reservas</span>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://i.pravatar.cc/300?img=25" alt="Foto de Larissa Menezes">
+                    <img src="https://i.pravatar.cc/300?u=larissa-menezes" alt="Foto de Larissa Menezes">
                     <figcaption>
                         <strong>Larissa Menezes</strong>
                         <span>Atendimento ao Cliente</span>
@@ -129,6 +124,7 @@
 
     <footer>
         <p>&copy; 2026 Viva Correnteza Rafting | Gustavo Rodrigues</p>
+
         <nav class="rede-sociais">
             <a href="https://facebook.com">
                 <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/facebook.svg"
@@ -148,11 +144,3 @@
 </body>
 
 </html>
-
-
-
-.equipe h2 {
-text-align: center;
-color: var(--rio-azul);
-margin: 0 auto 1.75rem;
-}
